@@ -16,15 +16,15 @@ Screenshot of the generated Swagger UI page:
 git clone https://github.com/86x/example-openapi-swagger-jsdoc
 ```
 
-2. Open a terminal window and do an npm init -y. (You need to have [nodejs](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed).
+2. Open a terminal window and install [nodejs](https://nodejs.org/) and [npm](https://www.npmjs.com/).
 ```
 sudo apt install nodejs npm
-npm init -y
 ```
 
-3. Download and install the required dependencies.
+3. Install the required dependencies while inside the project's directory.
 ```
-npm i express joi swagger-jsdoc swagger-ui-express
+cd ./example-openapi-swagger-jsdoc
+npm install
 ```
 
 4. Run the project
@@ -32,7 +32,7 @@ npm i express joi swagger-jsdoc swagger-ui-express
 node index.js
 ```
 
-5. Open a web browser and navigate to /api/docs for the Swagger UI page
+5. In the terminal you should see "Listening on port 1227". Open a web browser and navigate to /api/docs for the Swagger UI page
 ```
 http://localhost:1227/api/docs
 ```
@@ -41,6 +41,11 @@ or navigate to /api/docs/openapi.json to see the OpenAPI description
 http://localhost:1227/api/docs/openapi.json
 ```
 
+6. (Optional:) If the installation didn't work properly and/or the project won't run, try to manually install the dependencies from within the project's directory.
+```
+npm init -y
+npm i express@4.17.1 joi@17.4.0 swagger-jsdoc@7.0.0-rc.6 swagger-ui-express@4.1.6
+``
 
 ---
 
