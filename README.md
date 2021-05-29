@@ -45,7 +45,7 @@ http://localhost:1227/api/docs/openapi.json
 ```
 npm init -y
 npm i express@4.17.1 joi@17.4.0 swagger-jsdoc@7.0.0-rc.6 swagger-ui-express@4.1.6
-``
+```
 
 ---
 
